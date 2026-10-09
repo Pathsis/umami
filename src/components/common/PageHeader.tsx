@@ -7,7 +7,7 @@ export function PageHeader({
   description,
   label,
   icon,
-  showBorder = true,
+  showBorder = false,
   titleHref,
   children,
 }: {

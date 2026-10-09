@@ -37,8 +37,6 @@ export function TopNav() {
 
   return (
     <Row
-      position="sticky"
-      top="0"
       alignItems="center"
       justifyContent="flex-start"
       paddingY="2"
@@ -104,17 +102,6 @@ export function TopNav() {
           </>
         )}
       </Row>
-      <div
-        style={{
-          position: 'absolute',
-          bottom: -16,
-          left: 0,
-          right: 0,
-          height: 16,
-          background: 'linear-gradient(to bottom, var(--zen-surface-raised), transparent)',
-          pointerEvents: 'none',
-        }}
-      />
     </Row>
   );
 }

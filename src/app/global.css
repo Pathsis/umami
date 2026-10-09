@@ -60,6 +60,11 @@ select:is(:-webkit-autofill, :autofill):focus {
   padding-right: 36px;
 }
 
+/* Equalize spacing above and below the search field in select dropdown panels */
+.bg-surface-overlay > .mb-2 {
+  margin-bottom: 0;
+}
+
 /* rrweb-player overrides */
 .rr-controller__btns {
   gap: 8px;

@@ -65,7 +65,7 @@ export function App({ children }) {
       rows={{ base: 'auto 1fr', lg: '1fr' }}
       height="screen"
     >
-      <Row display={{ base: 'flex', lg: 'none' }} alignItems="center" gap padding="3">
+      <Row display={{ base: 'flex', lg: 'none' }} alignItems="center" gap padding="2">
         <MobileNav />
       </Row>
       <Column display={{ base: 'none', lg: 'flex' }} minHeight="0" style={{ overflow: 'hidden' }}>

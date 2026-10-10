@@ -54,15 +54,15 @@ export function MobileNav() {
                 links.map(link => {
                   return (
                     <Row key={link.id} padding>
-                      <Link href={renderUrl(link.path)} onClick={close}>
+                      <Link href={renderUrl(link.path)}>
                         <IconLabel icon={link.icon} label={link.label} />
                       </Link>
                     </Row>
                   );
                 })}
-              {websiteId && <WebsiteNav websiteId={websiteId} onItemClick={close} />}
-              {isAdmin && <AdminNav onItemClick={close} />}
-              {isSettings && <SettingsNav onItemClick={close} />}
+              {websiteId && <WebsiteNav websiteId={websiteId} />}
+              {isAdmin && <AdminNav />}
+              {isSettings && <SettingsNav />}
               <Row style={{ marginTop: 'auto' }}>
                 <UserButton onClose={close} />
               </Row>
